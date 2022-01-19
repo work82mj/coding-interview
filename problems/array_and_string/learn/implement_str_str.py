@@ -25,7 +25,7 @@ Constraints:
 haystack and needle consist of only lower-case English characters.
 """
 
-class Solution:
+class Solution1:
     def strStr(self, haystack: str, needle: str) -> int:
         if not needle: return 0
         try:
@@ -33,3 +33,7 @@ class Solution:
             return ret
         except ValueError:
             return -1
+
+class Solution2:
+    def strStr(self, haystack: str, needle: str) -> int:
+        return haystack.find(needle)
