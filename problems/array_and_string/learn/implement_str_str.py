@@ -37,3 +37,12 @@ class Solution1:
 class Solution2:
     def strStr(self, haystack: str, needle: str) -> int:
         return haystack.find(needle)
+
+class Solution3:
+    def strStr(self, haystack: str, needle: str) -> int:
+        if not needle: return 0
+        length = len(needle)
+        for idx in range(len(haystack)):
+            if haystack[idx: idx+length] == needle:
+                return idx
+        return -1
