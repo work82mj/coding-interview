@@ -28,9 +28,23 @@ The tests are generated such that there is exactly one solution.
 """
 
 # Brute Force: TLE
-class Solution:
+class Solution1:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
         for i in range(len(numbers)):
             for j in range(i+1, len(numbers)):
                 if numbers[i] + numbers[j] == target:
                     return [i+1, j+1]
+
+# two-pointer technique
+class Solution2:
+    def twoSum(self, numbers: List[int], target: int) -> List[int]:
+        left, right = 0, len(numbers) - 1
+        while left < right:
+            s = numbers[left] + numbers[right]
+
+            if s < target:
+                left += 1
+            elif s > target:
+                right -= 1
+            else:
+                return [left + 1, right + 1]
