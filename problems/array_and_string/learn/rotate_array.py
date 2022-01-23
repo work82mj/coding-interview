@@ -19,7 +19,7 @@ Constraints:
 """
 
 # TLE
-class Solution:
+class Solution1:
     def rotate(self, nums: List[int], k: int) -> None:
         """
         Do not return anything, modify nums in-place instead.
@@ -30,3 +30,11 @@ class Solution:
             while right != 0:
                 nums[right], nums[right - 1] = nums[right - 1], nums[right]
                 right -= 1
+                
+class Solution2:
+    def rotate(self, nums: List[int], k: int) -> None:
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        k = k % len(nums)
+        nums[:] = nums[-k:] + nums[:-k]
