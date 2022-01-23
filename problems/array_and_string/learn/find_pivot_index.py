@@ -29,6 +29,7 @@ Constraints:
 
 # my solution
 
+
 class Solution:
     def pivotIndex(self, nums: List[int]) -> int:
         left_sum, right_sum = 0, sum(nums)

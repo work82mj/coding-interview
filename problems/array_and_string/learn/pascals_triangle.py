@@ -17,6 +17,7 @@ Constraints:
 1 <= numRows <= 30
 """
 
+
 class Solution:
     def generate(self, numRows: int) -> List[List[int]]:
         if numRows == 1:

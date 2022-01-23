@@ -23,7 +23,7 @@ strs[i] consists of only lower-case English letters.
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
         pivot = min(strs, key=len)
-        prefix = ''
+        prefix = ""
         for s in pivot:
             for string in strs:
                 if not string.startswith(prefix + s):

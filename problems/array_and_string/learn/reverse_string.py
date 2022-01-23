@@ -17,6 +17,7 @@ Constraints:
 s[i] is a printable ascii character.
 """
 
+
 class Solution1:
     def reverseString(self, s: List[str]) -> None:
         """
