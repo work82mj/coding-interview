@@ -30,7 +30,8 @@ class Solution1:
             while right != 0:
                 nums[right], nums[right - 1] = nums[right - 1], nums[right]
                 right -= 1
-                
+
+
 class Solution2:
     def rotate(self, nums: List[int], k: int) -> None:
         """

@@ -35,7 +35,8 @@ class Solution1:
         words = s.strip().split(" ")
         ret = [word for word in words[::-1] if word]
 
-        return ' '.join(ret)
+        return " ".join(ret)
+
 
 # Solution2 is faster than Solution1
 class Solution2:
@@ -45,4 +46,4 @@ class Solution2:
         ret = [word for word in words if word]
         ret.reverse()
 
-        return ' '.join(ret)
+        return " ".join(ret)
