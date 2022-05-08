@@ -1,3 +1,18 @@
+"""
+https://www.acmicpc.net/problem/10974
+
+input1
+3
+
+output1
+1 2 3
+1 3 2
+2 1 3
+2 3 1
+3 1 2
+3 2 1
+"""
+
 import sys
 import itertools
 
