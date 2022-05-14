@@ -5,6 +5,7 @@ https://programmers.co.kr/learn/courses/30/lessons/49189
 import heapq
 from collections import Counter
 
+
 def solution(n, edge):
     def dijkstra(start):
         queue = []
