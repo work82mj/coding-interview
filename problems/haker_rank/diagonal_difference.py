@@ -17,6 +17,7 @@ def diagonalDifference1(arr):
 
     return abs(l2r - r2l)
 
+
 # O(N)
 def diagonalDifference2(arr):
     # Write your code here

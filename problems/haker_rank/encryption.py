@@ -4,12 +4,13 @@ def encryption1(s):
     n_row = int(L % 10)
 
     n_col = n_row + 1
-    ret = ['' for _ in range(n_col)]
+    ret = ["" for _ in range(n_col)]
 
     for idx, char in enumerate(strings):
         ret[idx % n_col] += char
 
     return " ".join(ret)
+
 
 def encryption2(s):
     # Write your code here
@@ -26,5 +27,4 @@ def encryption3(s):
     # Write your code here
     n_col = math.ceil(math.sqrt(len(s)))
 
-    return ' '.join(map(lambda x: s[x::n_col], range(n_col)))
-
+    return " ".join(map(lambda x: s[x::n_col], range(n_col)))
