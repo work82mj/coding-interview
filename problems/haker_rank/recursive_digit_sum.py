@@ -21,3 +21,14 @@ def superDigit(n, k):
             tmp_ret += int(s)
         ret = tmp_ret
     return ret
+
+
+def superDigit2(n, k):
+    ret = 0
+    for s in str(n):
+        ret += int(s)
+    ret *= k
+    if ret < 10:
+        return ret
+
+    return superDigit(ret, 1)
